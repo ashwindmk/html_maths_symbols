@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link rel="stylesheet" href="/css/styles.css"/>
 
 	<style>
 		#body-container {
@@ -14,28 +16,18 @@
 			margin-bottom: 40px;
 		}
 
-		.fraction {
-		    display: inline-block;
-		    position: relative;
-		    vertical-align: middle;
-		    letter-spacing: 0.001em;
-		    text-align: center;
-		}
-
-		.fraction > span.numerator {
-		    display: block;
-		    padding: 0.1em;
-		}
-		
-		.fraction span.denominator {
-		    border-top: thin solid black;
-		}
-
-		.fraction-wrapper {
+		.defint {
 			display: inline-block;
-			font-size: 2.5rem;
-			vertical-align: bottom;
-			transform: scale(.6, 1);
+			vertical-align: middle;
+			margin-right: -0.45em;
+		}
+
+		.lim {
+			font-size: 75%;
+		}
+
+		.int {
+			font-size: 125%;
 		}
 	</style>
 </head>
@@ -43,18 +35,36 @@
 	<div id="body-container">
 		<main>
 			<section>
-				<p>Integration</p>
-
+				<h4>Integration</h4>
 				&int; (x<sup>2</sup> + 2x + 5) dx
 			</section>
 
 			<section>
-				<p>Integration of Fraction</p>
-
+				<h4>Integration of Fraction</h4>
 				<div class="fraction-wrapper">&int;</div> <div class="fraction">
 					<span class="numerator">1</span>
 					<span class="denominator">x + 1</span> 
 				</div> dx
+			</section>
+
+			<section>
+				<h4>Definite Integration</h4>
+
+				<table class="defint">
+					<tbody>
+						<tr>
+							<td class="lim">100</td>
+						</tr>
+						<tr>
+							<td class="int">&int;</td>
+						</tr>
+						<tr>
+							<td class="lim">x = 0</td>
+						</tr>
+					</tbody>
+				</table> (x + 1) dx
+
+				<p>Displayed using table rows</p>
 			</section>
 		</main>
 	</div>

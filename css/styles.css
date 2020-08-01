@@ -1,0 +1,23 @@
+.fraction {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+
+.fraction > span.numerator {
+    display: block;
+    padding: 0.1em;
+}
+
+.fraction span.denominator {
+    border-top: thin solid black;
+}
+
+.fraction-wrapper {
+    display: inline-block;
+    font-size: 2rem;
+    vertical-align: middle;
+    transform: scale(.5, 1);
+}
